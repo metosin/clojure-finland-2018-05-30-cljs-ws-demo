@@ -1,0 +1,45 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body, #app {
+  width: 100%;
+}
+
+body {
+  background: #e1e1e1;
+  color: #1e1e1e;
+  font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+}
+
+#app {
+  max-width: 780px;
+  margin: auto;
+}
+
+
+.current-moods {
+  h2 {
+    margin: 1rem 0 1rem 0;
+  }
+  table {
+    border-collapse: collapse;
+    margin: 1rem;
+    thead {
+      th {
+        text-align: left;
+        padding: 5px;
+        border: 1px solid darkgray;
+        width: 10rem;
+      }
+    }
+    tbody {
+      td {
+        padding: 5px;
+        border: 1px solid darkgray;
+      }
+    }
+  }
+}
