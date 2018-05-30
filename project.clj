@@ -8,7 +8,7 @@
                  [metosin/potpuri "0.5.1"]
 
                  ; Eines:
-                 [metosin/eines "0.0.9-SNAPSHOT"]
+                 [metosin/eines "0.0.9"]
 
                  ; ClojureScript:
                  [org.clojure/clojurescript "1.10.238"]
