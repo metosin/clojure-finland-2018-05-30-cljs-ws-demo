@@ -36,11 +36,11 @@
      [:form.login-form {:on-submit (fn [e]
                                      (.preventDefault e)
                                      (login! value))}
-      [:input {:type :text
-               :value value
-               :on-change (fn [e]
-                            (->> e .-target .-value (swap! state assoc-in [:login :value])))
-               :placeholder "Username..."}]]]))
+      [:input.login-input {:type :text
+                           :value value
+                           :on-change (fn [e]
+                                        (->> e .-target .-value (swap! state assoc-in [:login :value])))
+                           :placeholder "Username..."}]]]))
 
 ;;
 ;; Mood:
@@ -73,11 +73,11 @@
   [:form.mood-form {:on-submit (fn [e]
                                  (.preventDefault e)
                                  (send-mood-update! form-value))}
-   [:input {:type :text
-            :value form-value
-            :on-change (fn [e]
-                         (->> e .-target .-value (swap! state assoc :form-value)))
-            :placeholder "Update your mood..."}]])
+   [:input.mood-input {:type :text
+                       :value form-value
+                       :on-change (fn [e]
+                                    (->> e .-target .-value (swap! state assoc :form-value)))
+                       :placeholder "Update your mood..."}]])
 
 (defn mood-view [state]
   [:div.mood-view
